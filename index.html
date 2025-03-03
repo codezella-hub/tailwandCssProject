@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMarket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- 🔵 HEADER -->
+    <header class="bg-[#1E3150] text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-xl font-bold">TECHMARKET</h1>
+            <nav class="hidden md:flex space-x-8 text-sm">
+                <a href="#" class="hover:text-gray-300">Accueil</a>
+                <a href="#" class="hover:text-gray-300">Produits</a>
+                <a href="#" class="hover:text-gray-300">Apropos</a>
+                <a href="#" class="hover:text-gray-300">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-6 text-lg">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <span class="text-sm font-bold">30</span>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🏷️ SECTION BANNIÈRE -->
+    <section class="container mx-auto py-10 px-4">
+        <img src="./image/banner.png" alt="Promotion Samsung Galaxy A16" class="w-full rounded-lg shadow-lg">
+    </section>
+
+  <!-- 🔸 SECTION CATÉGORIES -->
+<section class="container mx-auto py-10 px-4">
+    <div class="container mx-auto pl-6">
+         <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+        <span class="w-2 h-6 bg-orange-500 mr-2"></span> Produits 
+    </h2>
+    </div>
+    <div class="flex items-center justify-center space-x-4">
+        <button class="p-2 bg-orange-200 rounded-full">&lt;</button>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="flex flex-col items-center p-6 border border-orange-300 rounded-lg shadow-md">
+                <i class="fas fa-laptop text-4xl text-orange-500"></i>
+                <p class="text-sm mt-2 font-semibold">Ordinateur</p>
+            </div>
+            <div class="flex flex-col items-center p-6 border border-orange-300 rounded-lg shadow-md">
+                <i class="fas fa-mobile-alt text-4xl text-orange-500"></i>
+                <p class="text-sm mt-2 font-semibold">Téléphone</p>
+            </div>
+            <div class="flex flex-col items-center p-6 border border-orange-300 rounded-lg shadow-md">
+                <i class="fas fa-camera text-4xl text-orange-500"></i>
+                <p class="text-sm mt-2 font-semibold">Caméra</p>
+            </div>
+            <div class="flex flex-col items-center p-6 border border-orange-300 rounded-lg shadow-md">
+                <i class="fas fa-gamepad text-4xl text-orange-500"></i>
+                <p class="text-sm mt-2 font-semibold">Jeux</p>
+            </div>
+        </div>
+        <button class="p-2 bg-orange-200 rounded-full">&gt;</button>
+    </div>
+</section>
+<br>
+<hr>
+
+
+
+<section class="container mx-auto py-10 px-4">
+    <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+        <span class="w-2 h-6 bg-orange-500 mr-2"></span> Produits les plus vendus
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Produit 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/pc.png" alt="Ordinateur" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">ASUS F10 Gaming Laptop</p>
+            <p class="text-red-500 font-bold">950 DT</p>
+        </div>
+
+        <!-- Produit 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/camera.png" alt="Caméra" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">CANON EOS DSLR</p>
+            <p class="text-red-500 font-bold">900 DT</p>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/ecran.png" alt="Écran" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">MSI LCD Gaming</p>
+            <p class="text-red-500 font-bold">1000 DT</p>
+        </div>
+
+        <!-- Produit 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/manette.png" alt="Manette" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">MANET HN-002</p>
+            <p class="text-red-500 font-bold">250 DT</p>
+        </div>
+    </div>
+    
+    <div class="flex justify-center mt-6">
+        <button class="px-6 py-2 bg-orange-500 text-white font-bold rounded-md shadow-md hover:bg-orange-600 transition duration-300">
+            AFFICHER TOUT
+        </button>
+    </div>
+</section>
+
+<section class="container mx-auto py-6 px-4">
+    <div class="w-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="image/banner4.png" alt="Promo Chaise Gaming" class="w-full h-auto object-cover">
+    </div>
+</section>
+
+
+
+<section class="container mx-auto py-10 px-4">
+    <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+        <span class="w-2 h-6 bg-orange-500 mr-2"></span> Produits 
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Produit 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/pc.png" alt="Ordinateur" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">ASUS F10 Gaming Laptop</p>
+            <p class="text-red-500 font-bold">950 DT</p>
+        </div>
+
+        <!-- Produit 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/camera.png" alt="Caméra" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">CANON EOS DSLR</p>
+            <p class="text-red-500 font-bold">900 DT</p>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/ecran.png" alt="Écran" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">MSI LCD Gaming</p>
+            <p class="text-red-500 font-bold">1000 DT</p>
+        </div>
+
+        <!-- Produit 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/manette.png" alt="Manette" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">MANET HN-002</p>
+            <p class="text-red-500 font-bold">250 DT</p>
+        </div>
+         <!-- Produit 1 -->
+         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/pc.png" alt="Ordinateur" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">ASUS F10 Gaming Laptop</p>
+            <p class="text-red-500 font-bold">950 DT</p>
+        </div>
+
+        <!-- Produit 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/camera.png" alt="Caméra" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">CANON EOS DSLR</p>
+            <p class="text-red-500 font-bold">900 DT</p>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/ecran.png" alt="Écran" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">MSI LCD Gaming</p>
+            <p class="text-red-500 font-bold">1000 DT</p>
+        </div>
+
+        <!-- Produit 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <img src="image/manette.png" alt="Manette" class="w-full h-40 object-contain rounded">
+            <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">MANET HN-002</p>
+            <p class="text-red-500 font-bold">250 DT</p>
+        </div>
+    </div>
+    
+    <div class="flex justify-center mt-6">
+        <button class="px-6 py-2 bg-orange-500 text-white font-bold rounded-md shadow-md hover:bg-orange-600 transition duration-300">
+            AFFICHER TOUT
+        </button>
+    </div>
+</section>
+
+
+
+<section class="container mx-auto py-10 px-4">
+    <div class="container mx-auto pl-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center text-left">
+            <span class="w-2 h-6 bg-orange-500 mr-2"></span> Promotions
+        </h2>
+    </div>
+
+    <!-- Grid avec 2 images en haut et 1 en bas occupant toute la largeur -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto">
+        <!-- Image 1 -->
+        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+            <img src="image/banner1.png" alt="Promo 1" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Image 2 -->
+        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+            <img src="image/banner2.png" alt="Promo 2" class="w-full h-48 object-cover">
+        </div>
+
+        <!-- Image 3 (prend toute la largeur) -->
+        <div class="col-span-2 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+            <img src="image/banner3.png" alt="Promo 3" class="w-full h-48 object-cover">
+        </div>
+    </div>
+</section>
+<!-- 🏷️ SECTION CONTACTEZ-NOUS -->
+<section class="container mx-auto py-10 px-4">
+    <div class="container mx-auto pl-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center text-left">
+            <span class="w-2 h-6 bg-orange-500 mr-2"></span> Contactez-nous
+        </h2>
+    </div>
+    <div class="flex justify-center space-x-6 text-3xl">
+        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-green-500 hover:text-green-700"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-envelope"></i></a>
+        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-facebook-messenger"></i></a>
+    </div>
+</section>
+
+   <!-- 🔵 FOOTER -->
+<footer class="bg-[#1E3150] text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-center md:text-left justify-center">
+        <div>
+            <h3 class="font-semibold mb-2">Support</h3>
+            <p class="mb-1">Tunis, charguia I</p>
+            <p class="mb-1">techmarket@gmail.com</p>
+            <p>+216 56628040</p>
+            <p>+216 56628041</p>
+        </div>
+        <div>
+            <h3 class="font-semibold mb-2">Compte</h3>
+            <ul class="space-y-1">
+                <li>Mon compte</li>
+                <li>Login / Inscription</li>
+                <li>Panier</li>
+                <li>Produit</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-semibold mb-2">Lien rapide</h3>
+            <ul class="space-y-1">
+                <li>Privacy Policy</li>
+                <li>Terms Of Use</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
