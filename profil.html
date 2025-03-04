@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMarket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+           ;
+        }
+    </style>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById("menu-btn");
+            const menu = document.getElementById("menu");
+
+            menuBtn.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100 bg-white" >
+
+   <!-- 🔵 HEADER -->
+  <header class="bg-[#1E3150] text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- LOGO -->
+        <h1 class="text-xl font-bold">TECHMARKET</h1>
+
+        <!-- MENU BURGER (Mobile) -->
+        <button id="menu-btn" class="md:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- MENU NAVIGATION -->
+        <nav id="menu" class="hidden md:flex md:space-x-8 text-sm absolute md:static top-14 right-0 bg-[#1E3150] md:bg-transparent w-full md:w-auto text-center md:text-left p-4 md:p-0 shadow-md md:shadow-none">
+            <a href="index.html" class="block md:inline hover:text-gray-300 py-2">Accueil</a>
+            <a href="filtrage.html" class="block md:inline hover:text-gray-300 py-2">Produits</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Apropos</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Contact</a>
+        </nav>
+
+        <!-- ICONES PANIER & UTILISATEUR -->
+        <div class="flex items-center space-x-6 text-lg">
+            <a href="./panier.html"><i class="fas fa-shopping-cart"></i></a>
+            <span class="text-sm font-bold">30</span>
+            <a href="./login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+</header>
+    <main class="flex-grow container mx-auto px-4 py-10">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="relative">
+                    <div class="h-40 bg-gradient-to-r from-orange-400 to-bg-[#1E3150]"></div>
+                    <div class="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
+                        <div class="relative">
+                            <img 
+                                class="w-32 h-32 rounded-full border-4 border-white object-cover" 
+                                src="image/femme.png" 
+                                alt="Photo de profil"
+                            />
+                            <div class="absolute bottom-1 right-1 bg-white rounded-full p-1">
+                                <i class="fas fa-check-circle text-orange-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20 px-6 pb-6">
+                    <div class="text-center mb-6">
+                        <h2 class="text-2xl font-bold text-gray-800">Sinda Chammem</h2>
+                        <p class="text-gray-500">sinda.chammem@gmail.com</p>
+                        <div class="mt-3 inline-flex items-center px-4 py-2 bg-yellow-50 rounded-full">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <span class="ml-2 text-yellow-700 font-medium">1250 Points</span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center mb-8">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg flex items-center space-x-2 transition duration-200 transform hover:scale-105 shadow-md">
+                            <i class="fas fa-edit"></i>
+                            <span class="font-medium">Modifier le profil</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl p-6 text-center">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Informations personnelles</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center text-center">
+                            <div class="space-y-4">
+                                <div class="flex justify-center items-center space-x-4">
+                                    <span class="font-medium text-gray-600">Prénom :</span>
+                                    <span class="text-gray-800">Sinda</span>
+                                </div>
+                                <div class="flex justify-center items-center space-x-4">
+                                    <span class="font-medium text-gray-600">Nom :</span>
+                                    <span class="text-gray-800">Chammem</span>
+                                </div>
+                                <div class="flex justify-center items-center space-x-4">
+                                    <span class="font-medium text-gray-600">Date de naissance :</span>
+                                    <span class="text-gray-800">15 Mars 1995</span>
+                                </div>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="flex justify-center items-center space-x-4">
+                                    <span class="font-medium text-gray-600">Téléphone :</span>
+                                    <span class="text-gray-800">+216 12 345 678</span>
+                                </div>
+                                <div class="flex justify-center items-center space-x-4">
+                                    <span class="font-medium text-gray-600">Adresse :</span>
+                                    <span class="text-gray-800">Tunis, Tunisie</span>
+                                </div>
+                                <div class="flex justify-center items-center space-x-4">
+                                    <span class="font-medium text-gray-600">Membre depuis :</span>
+                                    <span class="text-gray-800">Janvier 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer class="bg-[#1E3150] text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-center md:text-left">
+        <div>
+            <h3 class="font-semibold mb-2">Support</h3>
+            <p class="mb-1">Tunis, Charguia I</p>
+            <p class="mb-1">techmarket@gmail.com</p>
+            <p>+216 56628040</p>
+            <p>+216 56628041</p>
+        </div>
+        <div>
+            <h3 class="font-semibold mb-2">Compte</h3>
+            <ul class="space-y-1">
+                <li>Mon compte</li>
+                <li>Login / Inscription</li>
+                <li>Panier</li>
+                <li>Produits</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-semibold mb-2">Liens rapides</h3>
+            <ul class="space-y-1">
+                <li>Privacy Policy</li>
+                <li>Terms Of Use</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+</html>
