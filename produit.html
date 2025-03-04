@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Techmarket</title>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById("menu-btn");
+            const menu = document.getElementById("menu");
+
+            menuBtn.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- 🔵 HEADER -->
+  <header class="bg-[#1E3150] text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- LOGO -->
+        <h1 class="text-xl font-bold">TECHMARKET</h1>
+
+        <!-- MENU BURGER (Mobile) -->
+        <button id="menu-btn" class="md:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- MENU NAVIGATION -->
+        <nav id="menu" class="hidden md:flex md:space-x-8 text-sm absolute md:static top-14 right-0 bg-[#1E3150] md:bg-transparent w-full md:w-auto text-center md:text-left p-4 md:p-0 shadow-md md:shadow-none">
+            <a href="index.html" class="block md:inline hover:text-gray-300 py-2">Accueil</a>
+            <a href="filtrage.html" class="block md:inline hover:text-gray-300 py-2">Produits</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Apropos</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Contact</a>
+        </nav>
+
+        <!-- ICONES PANIER & UTILISATEUR -->
+        <div class="flex items-center space-x-6 text-lg">
+            <a href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+            <span class="text-sm font-bold">30</span>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+</header>
+<section class="container mx-auto py-10 px-4 flex justify-center">
+    <img src="./image/banner.png" alt="Promotion Samsung Galaxy A16" class="max-w-xl w-full rounded-lg shadow-lg">
+</section>
+
+<div class="max-w-7xl mx-auto p-6">
+    <div class="flex flex-col md:flex-row gap-3 mt-4">
+        <div class="w-full md:w-1/4 bg-white p-4 shadow rounded">
+            <h3 class="font-semibold mb-3">Trier </h3>
+            <select id="sort" class="border px-4 py-2 rounded w-full">
+                <option value="price">Prix</option>
+                <option value="name">Nom</option>
+                <option value="date">Date</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="flex flex-col md:flex-row gap-4">
+        <aside class="w-full md:w-1/4 bg-white p-4 shadow rounded">
+            <h3 class="font-semibold mb-3">Filtrage</h3>
+            <ul class="space-y-2">
+                <li><input type="checkbox" checked> Informatique</li>
+                <li><input type="checkbox" checked> Gaming</li>
+                <li><input type="checkbox"> Téléphone</li>
+                <li><input type="checkbox"> Montre connectée</li>
+                <li><input type="checkbox"> Électroménager</li>
+                <li><input type="checkbox"> Impression</li>
+                <li><input type="checkbox"> Réseau & Sécurité</li>
+                <li><input type="checkbox"> Bureautiques</li>
+                <li><input type="checkbox"> Jeux & Jouets</li>
+                <li><input type="checkbox"> Mode beauté & santé</li>
+                <li><input type="checkbox"> Sports loisirs</li>
+            </ul>
+        </aside>
+
+        <main class="w-full md:w-3/4">
+            <div class="flex justify-center mb-4">
+                <div class="relative w-full sm:w-80">
+                    <i class="fas fa-microphone absolute left-3 top-3 text-gray-400 cursor-pointer"></i>
+                    <input type="text" placeholder="Rechercher..." class="border px-10 py-2 rounded w-full">
+                    <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+
+            <div class="container mx-auto pl-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                    <span class="w-2 h-6 bg-orange-500 mr-2"></span> Promotions
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6">
+                <!-- Produits -->
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">ASUS ROG Zephyrus G14</h3>
+                    <p class="text-red-500 font-bold">4500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">LG UltraGear 27GL850</h3>
+                    <p class="text-red-500 font-bold">1800 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">Nikon Z50 Mirrorless</h3>
+                    <p class="text-red-500 font-bold">3200 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">Nikon Z50 Mirrorless</h3>
+                    <p class="text-red-500 font-bold">3200 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">ASUS ROG Zephyrus G14</h3>
+                    <p class="text-red-500 font-bold">4500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">LG UltraGear 27GL850</h3>
+                    <p class="text-red-500 font-bold">1800 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">Nikon Z50 Mirrorless</h3>
+                    <p class="text-red-500 font-bold">3200 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">Nikon Z50 Mirrorless</h3>
+                    <p class="text-red-500 font-bold">3200 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">ASUS ROG Zephyrus G14</h3>
+                    <p class="text-red-500 font-bold">4500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">LG UltraGear 27GL850</h3>
+                    <p class="text-red-500 font-bold">1800 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">Nikon Z50 Mirrorless</h3>
+                    <p class="text-red-500 font-bold">3200 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <img src="image/ecran.png" alt="Produit" class="w-full h-40 object-cover mb-2">
+                    <h3 class="text-sm font-semibold">Nikon Z50 Mirrorless</h3>
+                    <p class="text-red-500 font-bold">3200 Dt</p>
+                </div>
+            </div>
+
+            <div class="container mx-auto pl-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                    <span class="w-2 h-6 bg-orange-500 mr-2"></span> Produits plus vendus
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6">
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+                <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition">
+                    <img src="image/manette.png" alt="Apple Watch Ultra 2" class="w-full h-40 object-cover mb-3 rounded">
+                    <h3 class="text-sm font-semibold">Apple Watch Ultra 2</h3>
+                    <p class="text-red-500 font-bold">3500 Dt</p>
+                </div>
+            </div>
+
+            <section class="container mx-auto py-10 px-4">
+                <div class="container mx-auto pl-6">
+                    <h2 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                        <span class="w-2 h-6 bg-orange-500 mr-2"></span> Promotions
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px] mx-auto">
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <img src="image/banner1.png" alt="Promo 1" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <img src="image/banner2.png" alt="Promo 2" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="col-span-2 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <img src="image/banner3.png" alt="Promo 3" class="w-full h-48 object-cover">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+    
+    <footer class="bg-[#1E3150] text-white py-10 mt-10">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-center md:text-left">
+            <div>
+                <h3 class="font-semibold mb-2">Support</h3>
+                <p class="mb-1">Tunis, Charguia I</p>
+                <p class="mb-1">techmarket@gmail.com</p>
+                <p>+216 56628040</p>
+                <p>+216 56628041</p>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Compte</h3>
+                <ul class="space-y-1">
+                    <li>Mon compte</li>
+                    <li>Login / Inscription</li>
+                    <li>Panier</li>
+                    <li>Produit</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Lien rapide</h3>
+                <ul class="space-y-1">
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
