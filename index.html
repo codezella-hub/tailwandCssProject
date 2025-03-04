@@ -8,6 +8,12 @@
     <!-- FontAwesome pour les icônes -->
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+           ;
+        }
+    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuBtn = document.getElementById("menu-btn");
@@ -42,9 +48,9 @@
 
         <!-- ICONES PANIER & UTILISATEUR -->
         <div class="flex items-center space-x-6 text-lg">
-            <a href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="./panier.html"><i class="fas fa-shopping-cart"></i></a>
             <span class="text-sm font-bold">30</span>
-            <a href="login.html"><i class="fas fa-user"></i></a>
+            <a href="./login.html"><i class="fas fa-user"></i></a>
         </div>
     </div>
 </header>
@@ -95,11 +101,13 @@
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Produit 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+         <a href="fiche.html">        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
             <img src="image/pc.png" alt="Ordinateur" class="w-full h-40 object-contain rounded">
             <p class="text-sm font-semibold mt-2 min-h-[50px] text-center">ASUS F10 Gaming Laptop</p>
             <p class="text-red-500 font-bold">950 DT</p>
         </div>
+    </a>
+
 
         <!-- Produit 2 -->
         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between items-center hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">

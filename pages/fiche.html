@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMarket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+           ;
+        }
+    </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuBtn = document.getElementById("menu-btn");
+                const menu = document.getElementById("menu");
+    
+                menuBtn.addEventListener("click", function () {
+                    menu.classList.toggle("hidden");
+                });
+            });
+        </script>
+</head>
+<body class="bg-gray-100 bg-white" >
+
+    
+  <!-- 🔵 HEADER -->
+  <header class="bg-[#1E3150] text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- LOGO -->
+        <h1 class="text-xl font-bold">TECHMARKET</h1>
+
+        <!-- MENU BURGER (Mobile) -->
+        <button id="menu-btn" class="md:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- MENU NAVIGATION -->
+        <nav id="menu" class="hidden md:flex md:space-x-8 text-sm absolute md:static top-14 right-0 bg-[#1E3150] md:bg-transparent w-full md:w-auto text-center md:text-left p-4 md:p-0 shadow-md md:shadow-none">
+            <a href="index.html" class="block md:inline hover:text-gray-300 py-2">Accueil</a>
+            <a href="filtrage.html" class="block md:inline hover:text-gray-300 py-2">Produits</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Apropos</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Contact</a>
+        </nav>
+
+        <!-- ICONES PANIER & UTILISATEUR -->
+        <div class="flex items-center space-x-6 text-lg">
+            <a href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+            <span class="text-sm font-bold">30</span>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+</header>
+    
+    <div class="max-w-6xl mx-auto p-4">
+        <!-- Breadcrumb -->
+        <nav class="text-gray-500 text-sm mb-4 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 text-gray-700" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Accueil</a>
+            <span class="mx-2">›</span>
+            <a href="#" class="hover:text-gray-900">Produits</a>
+            <span class="mx-2">›</span>
+            <a href="#" class="hover:text-gray-900">Ordinateur</a>
+            <span class="mx-2">›</span>
+            <a href="#" class="text-blue-500 font-medium hover:underline">MacBook Pro</a>
+        </nav>
+    
+        <!-- Contenu principal -->
+        <div class="bg-white p-4 rounded-lg  grid md:grid-cols-2 gap-4 items-center top-[-94px]">
+            <!-- Image du produit -->
+            <div class="flex flex-col items-center relative top-[-60px]">
+                <!-- Image du produit -->
+                <img src="../image/pc1.png" alt="MacBook Pro" class="w-[92%] rounded-lg"> 
+            
+                <!-- Réactions (juste sous l’image) -->
+                <div class="flex space-x-3 mt-3 relative top-[-40px]">
+                    <div class="flex space-x-3 mt-3 relative top-[-160px]">
+                        <button class="border border-gray-400 p-2 rounded-lg hover:bg-red-200 text-red-600">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="border border-gray-400 p-2 rounded-lg hover:bg-blue-200 text-blue-600">
+                            <i class="fas fa-thumbs-up"></i>
+                        </button>
+                        <button class="border border-gray-400 p-2 rounded-lg hover:bg-gray-200 text-gray-600">
+                            <i class="fas fa-meh"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+            
+                <!-- Ligne de séparation + Choix de couleur -->
+                <div class="w-full border-t border-gray-300 mt-4 pt-4 flex flex-col items-center relative top-[-148px]">
+                    <!-- Choix de couleur -->
+                    <div class="flex items-center space-x-4 relative top-[45px]">
+                        <span class="text-black">Couleur :</span>
+                        <button class="w-10 h-10 rounded-full border border-gray-400 bg-gray-200 flex items-center justify-center text-black hover:bg-green-200">
+                            <i class="fas fa-check"></i>
+                        </button>                        <button class="w-10 h-10 rounded-full border border-black bg-black"></button>
+                        <button class="w-10 h-10 rounded-full border border-gray-400 bg-blue-900"></button>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <!-- Détails du produit -->
+            <div>
+                <h1 class="text-3xl font-bold">Apple MacBook Pro M3 Pro 14" Silver 18GB/1TB</h1>
+                <p class="text-gray-600 mt-2">
+                    Boosté par la puce M2 nouvelle génération, le MacBook Air repensé offre des performances exceptionnelles et jusqu’à 18 heures d’autonomie.
+                    Boosté par la puce M2 nouvelle génération, le MacBook Air repensé offre des performances exceptionnelles et jusqu’à 18 heures d’autonomie.
+                    Boosté par la puce M2 nouvelle génération, le MacBook Air repensé offre des performances exceptionnelles et jusqu’à 18 heures d’autonomie.
+                    Boosté par la puce M2 nouvelle génération, le MacBook Air repensé offre des performances exceptionnelles et jusqu’à 18 heures d’autonomie.
+                    Boosté par la puce M2 nouvelle génération, le MacBook Air repensé offre des performances exceptionnelles et jusqu’à 18 heures d’autonomie.
+
+                </p>
+        
+                <!-- Prix et Sélecteur de quantité -->
+                <div class="mt-6 flex flex-col border-t border-gray-300 pt-4">
+                    <div class="flex items-center space-x-6">
+                        <!-- Sélecteur de quantité -->
+                        <div class="flex items-center border border-gray-300 rounded-lg">
+                            <button class="bg-white px-3 py-2 rounded-l text-lg hover:bg-gray-300">-</button>
+                            <span class="px-11 py-2 border-x border-gray-300 text-lg">1</span>
+                            <button class="bg-orange-500 text-black px-3 py-2 rounded-r text-lg hover:bg-orange-600">+</button>
+                        </div>
+        
+                        <!-- Prix -->
+                        <span class="text-3xl font-bold">$999.00</span>
+                    </div>
+                </div>
+        
+                <!-- Boutons d'achat -->
+                <div class="mt-6 flex space-x-4">
+                    <button class="bg-orange-500 text-black px-6 py-3 rounded flex items-center space-x-2 hover:bg-orange-600 flex-1">
+                        <img src="../assets/icons/shopping_cart.svg"   alt="Icône" class="w-8 h-8 fill-black">
+ <span>Ajouter au panier</span>
+                    </button>
+                    <button class="border border-gray-800 text-black px-6 py-3 rounded hover:bg-gray-100 flex-1">
+                        Acheter
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-full border-t border-gray-300 mt-4 pt-4 flex flex-col items-center relative  top-[-93px]">
+
+
+       <!-- ✅ Témoignages vidéo -->
+<div class="container mx-auto mt-12">
+   
+
+    <div class="flex flex-col">
+        <!-- Première ligne avec l'icône orange et le texte "Vidéo" -->
+        <div class="flex items-center">
+            <span class="w-2 h-6 bg-orange-500 mr-1"></span>  
+            <span class="text-sm text-black font-medium">Vidéo</span>
+        </div>
+        
+        <!-- Deuxième ligne avec le titre en gras -->
+        <h2 class="text-xl font-bold text-gray-900 mt-4 mb-10">Témoignages Vidéo</h2>
+    </div>
+
+    <!-- Carrousel Swiper -->
+    <div class="relative max-w-3xl mx-auto left-[90px]">
+        <div class="swiper videoSwiper">
+            <div class="swiper-wrapper flex items-center space-x-6">
+                <!-- Vidéo 1 -->
+                <div class="swiper-slide flex justify-center relative">
+                    <div class="w-32 h-32 rounded-lg overflow-hidden border border-gray-300 shadow-md relative">
+                        <img src="../image/pc1.png" alt="Vidéo 1" class="w-full h-full object-cover">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vidéo 2 -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="w-32 h-32 rounded-lg overflow-hidden border border-gray-300 shadow-md relative">
+                        <img src="../image/pc1.png" alt="Vidéo 2" class="w-full h-full object-cover">
+                        <a href="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" target="_blank"
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vidéo 3 (Déjà vue, sans contour) -->
+                <div class="swiper-slide flex justify-center">
+                    <div class="w-32 h-32 rounded-lg overflow-hidden relative opacity-50">
+                        <img src="../image/pc1.png" alt="Vidéo 3" class="w-full h-full object-cover">
+                        <a href="https://www.youtube.com/watch?v=tgbNymZ7vqY" target="_blank"
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ajouter une Vidéo -->
+                <div class="swiper-slide flex justify-center relative">
+                    <div class="w-32 h-32 rounded-lg border border-gray-400 flex items-center justify-center bg-gray-200">
+                        <button>
+                            <i class="fas fa-plus text-gray-500 text-4xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Section Similaires -->
+<div class="w-full border-t border-gray-300 mt-4 pt-4 flex flex-col items-center relative top-[60px]">
+    <div class="container mx-auto mt-6">
+        <!-- Titre -->
+       
+        
+        <div class="flex flex-col">
+            <!-- Première ligne avec l'icône orange et le texte "Vidéo" -->
+            <div class="flex items-center">
+                <span class="w-2 h-6 bg-orange-500 mr-1"></span>  
+                <span class="text-sm text-black font-medium">Articles</span>
+            </div>
+            
+            <!-- Deuxième ligne avec le titre en gras -->
+            <h2 class="text-xl font-bold text-gray-900 mt-4 mb-10">Similaires</h2>
+        </div>
+
+        <!-- Liste des produits -->
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[2px]">
+            <!-- Produit 1 -->
+            <div class="flex flex-col items-center w-full">
+                <div class="relative bg-gray-100 border border-gray-200 rounded-lg shadow-md p-2 w-full flex items-center justify-center">
+                    <img src="../image/pc1.png" alt="MacBook" class="w-32 h-32 object-cover rounded">
+                    <i class="fas fa-star absolute top-2 left-2 text-lg text-gray-500"></i>
+                    <i class="fas fa-eye absolute top-2 right-2 text-lg text-gray-500"></i>
+                </div>
+                <h3 class="text-xs font-semibold mt-1 text-gray-800 text-center">
+                    MacBook Air M3 15" (2024) 8Go/256Go
+                </h3>
+                <p class="text-orange-500 font-bold text-sm">5899.00 DT</p>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="flex flex-col items-center w-full">
+                <div class="relative bg-gray-100 border border-gray-200 rounded-lg shadow-md p-2 w-full flex items-center justify-center">
+                    <img src="../image/pc1.png" alt="MacBook" class="w-32 h-32 object-cover rounded">
+                    <i class="fas fa-star absolute top-2 left-2 text-lg text-blue-500"></i>
+                    <i class="fas fa-eye absolute top-2 right-2 text-lg text-gray-500"></i>
+                </div>
+                <h3 class="text-xs font-semibold mt-1 text-gray-800 text-center">
+                    MacBook Pro 16" i7
+                </h3>
+                <p class="text-orange-500 font-bold text-sm">7499.00 DT</p>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="flex flex-col items-center w-full">
+                <div class="relative bg-gray-100 border border-gray-200 rounded-lg shadow-md p-2 w-full flex items-center justify-center">
+                    <img src="../image/pc1.png" alt="MacBook" class="w-32 h-32 object-cover rounded">
+                    <i class="fas fa-star absolute top-2 left-2 text-lg text-orange-500"></i>
+                    <i class="fas fa-eye absolute top-2 right-2 text-lg text-gray-500"></i>
+                </div>
+                <h3 class="text-xs font-semibold mt-1 text-gray-800 text-center">
+                    MacBook Air M1 8Go 512Go
+                </h3>
+                <p class="text-orange-500 font-bold text-sm">3500.00 DT</p>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="flex flex-col items-center w-full">
+                <div class="relative bg-gray-100 border border-gray-200 rounded-lg shadow-md p-2 w-full flex items-center justify-center">
+                    <img src="../image/pc1.png" alt="MacBook" class="w-32 h-32 object-cover rounded">
+                    <i class="fas fa-star absolute top-2 left-2 text-lg text-gray-500"></i>
+                    <i class="fas fa-eye absolute top-2 right-2 text-lg text-gray-500"></i>
+                </div>
+                <h3 class="text-xs font-semibold mt-1 text-gray-800 text-center">
+                    MacBook Pro 16" i9 16Go 1To
+                </h3>
+                <p class="text-orange-500 font-bold text-sm">7899.00 DT</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div></div>
+        
+
+
+    <!-- 🔵 FOOTER -->
+    <footer class="bg-[#1E3150] text-white py-10">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-center md:text-left">
+            <div>
+                <h3 class="font-semibold mb-2">Support</h3>
+                <p class="mb-1">Tunis, Charguia I</p>
+                <p class="mb-1">techmarket@gmail.com</p>
+                <p>+216 56628040</p>
+                <p>+216 56628041</p>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Compte</h3>
+                <ul class="space-y-1">
+                    <li>Mon compte</li>
+                    <li>Login / Inscription</li>
+                    <li>Panier</li>
+                    <li>Produits</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-2">Liens rapides</h3>
+                <ul class="space-y-1">
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
