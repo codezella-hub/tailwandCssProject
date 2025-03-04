@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+        }
+
+        /* Desktop View */
+        @media (min-width: 1024px) {
+            .sidebar {
+                width: 20%;
+            }
+            .main-content {
+                flex: 1;
+            }
+            .footer .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Tablet View */
+        @media (max-width: 1023px) and (min-width: 768px) {
+            .sidebar {
+                width: 30%;
+            }
+            .footer .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer .grid {
+                grid-template-columns: 1fr;
+            }
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById("menu-btn");
+            const menu = document.getElementById("menu");
+
+            menuBtn.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100">
+    
+ <!-- 🔵 HEADER -->
+ <header class="bg-[#1E3150] text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- LOGO -->
+        <h1 class="text-xl font-bold">TECHMARKET</h1>
+
+        <!-- MENU BURGER (Mobile) -->
+        <button id="menu-btn" class="md:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- MENU NAVIGATION -->
+        <nav id="menu" class="hidden md:flex md:space-x-8 text-sm absolute md:static top-14 right-0 bg-[#1E3150] md:bg-transparent w-full md:w-auto text-center md:text-left p-4 md:p-0 shadow-md md:shadow-none">
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Accueil</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Produits</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Apropos</a>
+            <a href="#" class="block md:inline hover:text-gray-300 py-2">Contact</a>
+        </nav>
+
+        <!-- ICONES PANIER & UTILISATEUR -->
+        <div class="flex items-center space-x-6 text-lg">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <span class="text-sm font-bold">30</span>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </div>
+</header>
+    
+    <div class="content">
+        <!-- Sidebar -->
+        <aside class="sidebar bg-white p-4 border-r">
+            <h2 class="font-bold text-lg">Filtrage</h2>
+            <ul>
+                <li><input type="checkbox"> Informatique</li>
+                <li><input type="checkbox"> Gaming</li>
+                <li><input type="checkbox"> Téléphone</li>
+                <li><input type="checkbox"> Montre connectée</li>
+                <li><input type="checkbox"> Électroménager</li>
+            </ul>
+        </aside>
+        
+        <!-- Product Grid -->
+        <main class="main-content p-4">
+            <div class="product-grid grid grid-cols-3 gap-4">
+                <!-- Product 1 -->
+                <div class="bg-white p-4 shadow rounded relative">
+                    <img src="https://via.placeholder.com/150" alt="MacBook Air" class="w-full">
+                    <h3 class="font-bold">MacBook Air M3 15"</h3>
+                    <p class="text-red-500">$260 <span class="line-through text-gray-500">$360</span></p>
+                    <span class="absolute top-2 right-2 cursor-pointer text-xl">👁️</span>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-4 shadow rounded relative">
+                    <img src="https://via.placeholder.com/150" alt="MacBook Air" class="w-full">
+                    <h3 class="font-bold">MacBook Air M3 15"</h3>
+                    <p class="text-red-500">$260 <span class="line-through text-gray-500">$360</span></p>
+                    <span class="absolute top-2 right-2 cursor-pointer text-xl">👁️</span>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-4 shadow rounded relative">
+                    <img src="https://via.placeholder.com/150" alt="MacBook Air" class="w-full">
+                    <h3 class="font-bold">MacBook Air M3 15"</h3>
+                    <p class="text-red-500">$260 <span class="line-through text-gray-500">$360</span></p>
+                    <span class="absolute top-2 right-2 cursor-pointer text-xl">👁️</span>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white p-4 shadow rounded relative">
+                    <img src="https://via.placeholder.com/150" alt="Smartphone" class="w-full">
+                    <h3 class="font-bold">iPhone 13 Pro</h3>
+                    <p class="text-red-500">$999 <span class="line-through text-gray-500">$1200</span></p>
+                    <span class="absolute top-2 right-2 cursor-pointer text-xl">👁️</span>
+                </div>
+                <!-- Product 5 -->
+                <div class="bg-white p-4 shadow rounded relative">
+                    <img src="https://via.placeholder.com/150" alt="Smartwatch" class="w-full">
+                    <h3 class="font-bold">Apple Watch Series 7</h3>
+                    <p class="text-red-500">$399 <span class="line-through text-gray-500">$499</span></p>
+                    <span class="absolute top-2 right-2 cursor-pointer text-xl">👁️</span>
+                </div>
+                <!-- Product 6 -->
+                <div class="bg-white p-4 shadow rounded relative">
+                    <img src="https://via.placeholder.com/150" alt="Headphones" class="w-full">
+                    <h3 class="font-bold">Bose QuietComfort 45</h3>
+                    <p class="text-red-500">$299 <span class="line-through text-gray-500">$349</span></p>
+                    <span class="absolute top-2 right-2 cursor-pointer text-xl">👁️</span>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="flex justify-center mt-6">
+                <button class="px-3 py-1 border">&lt; Précédent</button>
+                <button class="px-3 py-1 border mx-2 bg-blue-500 text-white">1</button>
+                <button class="px-3 py-1 border">2</button>
+                <button class="px-3 py-1 border">3</button>
+                <button class="px-3 py-1 border">Next &gt;</button>
+            </div>
+        </main>
+        
+        <!-- Chatbot -->
+        <aside class="sidebar w-1/5 bg-gray-200 p-4 border-l relative">
+            <h2 class="font-bold text-lg">ChatBot</h2>
+            <div class="mt-4 p-2 bg-white shadow rounded">
+                <p>Que recherchez-vous ?</p>
+                <div class="flex items-center border rounded p-2 mt-2">
+                    <input type="text" class="flex-1 outline-none" placeholder="Posez votre question">
+                    <span class="cursor-pointer text-xl">🎤</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+      <!-- 🔵 FOOTER -->
+<footer class="bg-[#1E3150] text-white py-10">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-center md:text-left justify-center">
+        <div>
+            <h3 class="font-semibold mb-2">Support</h3>
+            <p class="mb-1">Tunis, charguia I</p>
+            <p class="mb-1">techmarket@gmail.com</p>
+            <p>+216 56628040</p>
+            <p>+216 56628041</p>
+        </div>
+        <div>
+            <h3 class="font-semibold mb-2">Compte</h3>
+            <ul class="space-y-1">
+                <li>Mon compte</li>
+                <li>Login / Inscription</li>
+                <li>Panier</li>
+                <li>Produit</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-semibold mb-2">Lien rapide</h3>
+            <ul class="space-y-1">
+                <li>Privacy Policy</li>
+                <li>Terms Of Use</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

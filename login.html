@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMarket - Connexion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            .form-container {
+                flex-direction: column !important;
+            }
+
+            .separator {
+                display: none;
+            }
+
+            .form-social {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-blue-900 text-white">
+    <div class="w-full max-w-2xl bg-blue-900 p-6 rounded-lg shadow-md">
+        <h2 class="text-center text-2xl font-semibold">TECHMARKET</h2>
+        <p class="text-center text-lg mb-4">Se connecter</p>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center form-container">
+            <!-- Connexion avec réseaux sociaux -->
+            <div class="flex flex-col gap-3 w-full md:w-1/2 form-social">
+                <button class="flex items-center bg-orange-500 text-white px-4 py-2 rounded w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="w-5 h-5 mr-2" alt="Gmail">
+                    S'INSCRIRE AVEC GMAIL
+                </button>
+                <button class="flex items-center bg-white text-black px-4 py-2 rounded w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" class="w-5 h-5 mr-2" alt="Facebook">
+                    S'INSCRIRE AVEC FACEBOOK
+                </button>
+                <button class="flex items-center bg-black text-white px-4 py-2 rounded w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" class="w-5 h-5 mr-2" alt="X">
+                    S'INSCRIRE AVEC X
+                </button>
+            </div>
+            
+            <div class="hidden md:block w-px bg-gray-400 mx-6 h-32 separator"></div>
+            
+            <!-- Formulaire de connexion -->
+            <div class="w-full md:w-1/2">
+                <input type="email" placeholder="Email" class="w-full px-3 py-2 mb-2 bg-gray-200 text-black rounded">
+                <input type="password" placeholder="Mot de passe" class="w-full px-3 py-2 mb-2 bg-gray-200 text-black rounded">
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">SE CONNECTER</button>
+                    <a href="#" class="text-sm text-gray-300">Mot de passe oublié ?</a>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-center mt-4">Besoin d'un compte ? <a href="#" class="text-blue-400">S'inscrire</a></p>
+    </div>
+</body>
+</html>
